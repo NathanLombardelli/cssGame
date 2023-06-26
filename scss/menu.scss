@@ -1,0 +1,44 @@
+#menu{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+ul{
+  list-style: none;
+  text-align: center;
+  li{
+    margin-bottom: 15px;
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+  #chapitre_un{
+    li{
+      a{
+        color: green;
+      }
+    }
+  }
+
+  #chapitre_deux{
+    li{
+      a{
+        color: #deaf12;
+      }
+    }
+  }
+
+  #chapitre_trois{
+    li{
+      a{
+        color: red;
+      }
+    }
+  }
+
+}

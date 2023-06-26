@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+#menu ul {
+  list-style: none;
+  text-align: center;
+}
+#menu ul li {
+  margin-bottom: 15px;
+}
+#menu ul li a {
+  text-decoration: none;
+}
+#menu #chapitre_un li a {
+  color: green;
+}
+#menu #chapitre_deux li a {
+  color: #deaf12;
+}
+#menu #chapitre_trois li a {
+  color: red;
+}
+
+#body11 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+#body11 #indice {
+  background-color: grey;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  font-size: 24px;
+}
+#body11 #code {
+  width: 42.5%;
+  height: 500px;
+  background-color: lightblue;
+  position: absolute;
+  left: 5%;
+}
+#body11 .resultat {
+  width: 42.5%;
+  height: 500px;
+  position: absolute;
+  right: 5%;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=Style.css.map */
