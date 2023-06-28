@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 #menu {
@@ -32,32 +33,71 @@
   color: red;
 }
 
-#body11 {
+header {
+  position: absolute;
+  top: 25px;
+}
+
+#bodyLvl {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
 }
-#body11 #indice {
-  background-color: grey;
+#bodyLvl #menu {
   position: absolute;
-  top: 100px;
-  left: 100px;
+  left: 50px;
+  top: 50px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  border: 1px solid red;
+  padding: 10px 15px 10px 15px;
+}
+#bodyLvl #menu:hover {
+  cursor: pointer;
+}
+#bodyLvl #indice {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
   font-size: 24px;
 }
-#body11 #code {
+#bodyLvl #indice button {
+  padding: 10px 10px 10px 10px;
+}
+#bodyLvl #indice p {
+  opacity: 0;
+  background-color: lightgray;
+}
+#bodyLvl #code {
   width: 42.5%;
   height: 500px;
   background-color: lightblue;
   position: absolute;
   left: 5%;
+  font-size: 24vw;
 }
-#body11 .resultat {
+#bodyLvl #code style {
+  height: 100%;
+}
+#bodyLvl .resultat {
   width: 42.5%;
   height: 500px;
   position: absolute;
   right: 5%;
   border: 1px solid black;
+}
+#bodyLvl #next {
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  border: 1px solid red;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+}
+#bodyLvl #next:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=Style.css.map */

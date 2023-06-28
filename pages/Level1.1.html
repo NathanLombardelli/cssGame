@@ -7,21 +7,45 @@
     <title>Menu test</title>
     <link rel="stylesheet" href="../Style.css">
 </head>
-<body id="body11">
+<header>
+    <h1 id="title">background vs background-color vs background-image</h1>
+    <p id="exercice">
+
+        1) make a red background <br>
+        2) make the file tree.jpg as a background. (path : ../img/tree.jpg)<br>
+        3) make a red background,use the image tree.jpg as a background with no-repeat and show his right-top in one line
+
+    </p>
+</header>
+<body id="bodyLvl">
+
+<a id="menu" href="../index.html">Menu</a>
 
 <section id="indice">
-<p>background vs background-color ?</p>
+    <button onclick="hint()"> Hint </button>
+    <p id="hint">
+    background-color refers to the background color <br>
+    background is shorthand to combine many background tags into one line. <br>
+    try : background: #ffffff url("../img/tree.jpg") no-repeat left bottom; <br>
+        <span style="text-decoration: line-through;">background-color: #ffffff url("../img/tree.jpg") no-repeat right top;</span>
+    </p>
 </section>
 
 <section id="code">
-<style style="display: inherit; white-space: pre; padding: 10px; font-size: 28px;" contenteditable="true">
-    .resultat{
-        background:  ;
-    }
+<style style="display: inherit; white-space: pre; font-size: 28px;" contenteditable="true">
 
     .resultat{
         background-color:  ;
     }
+
+    .resultat{
+        background-image:  ;
+    }
+
+    .resultat{
+        background:  ;
+    }
+
 </style>
 </section>
 
@@ -30,6 +54,8 @@
 
 </section>
 
+<a id="next" href="Level1.2.html">Next Level</a>
 
+<script src="../js/main.js"></script>
 </body>
 </html>
