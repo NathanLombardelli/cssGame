@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoCreate</title>
+</head>
+<body>
+
+
+</body>
+<Style id="style" style="display: inherit; white-space: pre; font-size: 28px;">
+
+</Style>
+
+<script >
+    let style = document.getElementById('style');
+
+    let styleTxt =
+        "/*\n" +
+        "Salut ! Bienvenu sur mon site !\n" +
+        " ... \n" +
+        " il est pas ouf non ? \n" +
+        " on va amélioré ça ! \n" +
+        "*/\n" +
+        "\n" +
+        "body{\n" +
+        " background:background: rgb(255,147,0);\n" +
+        "background: linear-gradient(90deg, rgba(255,147,0,1) 0%, rgba(255,0,0,1) 37%, rgba(0,46,255,1) 100%);\n" +
+        "}\n" +
+        "\n" +
+        "#style{\n" +
+        " width:550px;\n" +
+        " height:600px;\n" +
+        " font-size:24px !important;\n" +
+        " background:rgba(255,255,255,0.25);\n" +
+        " border-radius:25px;\n" +
+        " overflow:scroll;\n" +
+        "}\n" +
+        "\n" +
+        "body{display:flex;justify-content:center;align-items:center;height:100vh;}"
+
+    typeText(0,styleTxt,5);
+
+    function typeText(index,text,delay) {
+        if (index < text.length) {
+            style.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(() => {
+                typeText(index,text,delay);
+            }, delay);
+        }
+    }
+
+
+
+</script>
+</html>
